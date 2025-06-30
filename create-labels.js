@@ -37,7 +37,7 @@ rl.question('Enter GitHub repository URL: ', async (repoUrl) => {
   try {
     const match = repoUrl.match(/github\.com\/([^/]+)\/([^/]+)/);
     if (!match) {
-      console.error('❌ URL 형식이 올바르지 않습니다.');
+        console.error('❌ Invalid URL format.');
       rl.close();
       return;
     }
